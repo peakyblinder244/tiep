@@ -1,1 +1,1 @@
-# tiep
+# sequelize-login-register-sendmail-restful

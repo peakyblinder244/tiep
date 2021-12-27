@@ -1,0 +1,32 @@
+<nav class="navbar navbar-Secondary bg-secondary">
+    <div class="container-fluid  bg-Secondary">
+        <div>
+            <div class="header__top__right__auth">
+                {{!-- <a href="#"><i class="fa fa-user"></i> Login</a> --}}
+                {{#if user}}
+                <a href="#" style="cursor: auto;">
+                    <i class="fas fa-user-check" style="margin-left: 10px;"></i>
+                    Hello
+                    {{user.fullName}}
+                </a>
+
+                <a href="/logout">
+                    <i class="fas fa-sign-out-alt" style="margin-left: 10px;"></i>
+                    Đăng Xuất</a>
+                {{else}}
+                <a href="/login">
+                    <i class="fas fa-sign-in-alt" style="margin-left: 10px;"></i>
+                    Đăng nhập</a>
+                <a href="/register"><i class="fa fa-user-plus" style="margin-left: 10px;"></i>
+                    Đăng ký</a>
+                {{/if}}
+            </div>
+
+        </div>
+        <a class="navbar-brand" href="/movie">Home</a>
+        <form class="d-flex" id="searchForm">
+            <input type="text" class="form-control" id="searchText" placeholder="Search Movies...">
+            <button class="btn btn-outline-success" type="submit">Search</button>
+        </form>
+    </div>
+</nav>

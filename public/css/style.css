@@ -1,0 +1,18 @@
+
+  .loader {
+     display: none; 
+    /* margin: auto; */
+    position: absolute;
+    top: calc(50% - 32px);
+    left: calc(50% - 32px);
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    perspective: 800px;
+  }
+  .disabled{
+
+    display: block;
+   }
+ 
+ 
